@@ -1,15 +1,9 @@
-class Storages {
+class Storage {
     #items;
      constructor (items) {  this.#items = items;}
      get items() { return  this.#items; }
      set items(newItem) { this.#items = newItem}
-}
-class Storage extends Storages {
-    constructor (items, newItem, itemToRemove) {
-    super(items)
-    this.newItem = newItem;
-    this.itemToRemove = itemToRemove;
-    }
+
      getItems() { 
      return  this.items;
     }
