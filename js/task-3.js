@@ -1,15 +1,9 @@
-class StringBuilders {
+class StringBuilder {
     #value;
   constructor (value) {  this.#value = value;}
    get value() { return  this.#value; }
    set value(str) { this.#value = str}
-}
 
-class StringBuilder extends StringBuilders {
-     constructor (value, str) {
-     super(value)
-     this.str = str;
-     }
      getValue() {
        return this.value;
      }
